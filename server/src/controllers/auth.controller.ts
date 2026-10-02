@@ -91,16 +91,16 @@ export const signUp = async (
       .cookie('accessToken', accessToken, {
         httpOnly: true,
         secure: process.env.NODE_ENV === 'production',
-        domain: process.env.NODE_ENV === 'production' ? '.aryan-dev.in' : 'localhost',
         sameSite: 'lax',
         maxAge: 24 * 60 * 60 * 1000,
+        path: '/',
       })
       .cookie('refreshToken', refreshToken, {
         httpOnly: true,
         secure: process.env.NODE_ENV === 'production',
-        domain: process.env.NODE_ENV === 'production' ? '.aryan-dev.in' : 'localhost',
         sameSite: 'lax',
         maxAge: 24 * 60 * 60 * 1000 * 365,
+        path: '/',
       })
       .json(
         ApiResponse.success(
@@ -134,7 +134,7 @@ export const signIn = async (
     switch (signInWith) {
       case 'google':
         try {
-          const { userType = 'patient' } = req.body;
+          const { userType = 'user' } = req.body;
           const url = getGoogleAuthURL({ userType });
           res.status(200).json(ApiResponse.success({ url }, 'Google Auth URL'));
           return;
@@ -182,16 +182,16 @@ export const signIn = async (
           .cookie('accessToken', accessToken, {
             httpOnly: true,
             secure: process.env.NODE_ENV === 'production',
-            domain: process.env.NODE_ENV === 'production' ? 'aryan-dev.in' : 'localhost',
             sameSite: 'lax',
             maxAge: 24 * 60 * 60 * 1000,
+            path: '/',
           })
           .cookie('refreshToken', refreshToken, {
             httpOnly: true,
             secure: process.env.NODE_ENV === 'production',
-            domain: process.env.NODE_ENV === 'production' ? 'aryan-dev.in' : 'localhost',
             sameSite: 'lax',
             maxAge: 24 * 60 * 60 * 1000 * 365,
+            path: '/',
           })
           .json(
             ApiResponse.success(
@@ -276,16 +276,16 @@ export const googleAuthCallback = async (
         .cookie('accessToken', accessToken, {
           httpOnly: true,
           secure: process.env.NODE_ENV === 'production',
-          domain: process.env.NODE_ENV === 'production' ? 'aryan-dev.in' : 'localhost',
           sameSite: 'lax',
           maxAge: 24 * 60 * 60 * 1000,
+          path: '/',
         })
         .cookie('refreshToken', refreshToken, {
           httpOnly: true,
           secure: process.env.NODE_ENV === 'production',
-          domain: process.env.NODE_ENV === 'production' ? 'aryan-dev.in' : 'localhost',
           sameSite: 'lax',
           maxAge: 24 * 60 * 60 * 1000 * 365,
+          path: '/',
         })
         .json(
           ApiResponse.success(
@@ -330,16 +330,16 @@ export const googleAuthCallback = async (
       .cookie('accessToken', accessToken, {
         httpOnly: true,
         secure: process.env.NODE_ENV === 'production',
-        domain: process.env.NODE_ENV === 'production' ? 'aryan-dev.om' : undefined,
         sameSite: 'lax',
         maxAge: 24 * 60 * 60 * 1000,
+        path: '/',
       })
       .cookie('refreshToken', refreshToken, {
         httpOnly: true,
         secure: process.env.NODE_ENV === 'production',
-        domain: process.env.NODE_ENV === 'production' ? 'aryan-dev.in' : undefined,
         sameSite: 'lax',
         maxAge: 24 * 60 * 60 * 1000 * 365,
+        path: '/',
       })
       .json(
         ApiResponse.success(
@@ -498,14 +498,12 @@ export const signOut = async (
     .clearCookie('accessToken', {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
-      domain: process.env.NODE_ENV === 'production' ? '.aryan-dev.in' : undefined,
       sameSite: 'lax',
       path: '/',
     })
     .clearCookie('refreshToken', {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
-      domain: process.env.NODE_ENV === 'production' ? '.aryan-dev.in' : undefined,
       sameSite: 'lax',
       path: '/',
     })

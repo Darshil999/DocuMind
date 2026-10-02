@@ -45,16 +45,21 @@ flowchart LR
 
 ## Screenshots
 
-Screenshots will be added soon.
+Add these real screenshots after running the application locally:
+
+- `docs/screenshots/landing.png`
+- `docs/screenshots/chat.png`
+- `docs/screenshots/conversation.png`
 
 ## Getting Started
 
 ### Prerequisites
 
 - Node.js 20 or newer.
-- A MongoDB deployment.
-- Credentials for at least one supported AI provider.
-- AWS S3 credentials if using media uploads.
+- MongoDB running locally or reachable through `MONGODB_URL`.
+- An API key for at least one supported AI provider for actual chat responses.
+- AWS S3 configuration only when testing media uploads.
+- Google OAuth credentials only when testing Google authentication.
 
 ### Start the API server
 
@@ -89,6 +94,15 @@ npm run dev
 ```
 
 The Next.js development server defaults to `http://localhost:3000`.
+
+For the default local setup, set:
+
+```dotenv
+NEXT_PUBLIC_API_URL=http://localhost:5000/v1
+```
+
+The client app appends its `/api/...` route paths to this base URL, while the
+Express server mounts the corresponding routes under `/v1/api`.
 
 ## Key Engineering Highlights
 

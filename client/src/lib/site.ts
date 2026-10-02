@@ -1,7 +1,5 @@
 /** Shared SEO / branding (single source of truth). */
 
-export const SITE_AUTHOR = "Patel Aryan"
-
 export const SITE_NAME = "DocuMind"
 
 export const SITE_DESCRIPTION =

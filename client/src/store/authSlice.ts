@@ -1,13 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState: { userInfo: { name: string, email: string, image?: string }, isLoggedIn: boolean, isHospitalConfigured: boolean } = {
+const initialState: { userInfo: { name: string, email: string, image?: string }, isLoggedIn: boolean } = {
     userInfo: {
         name: "",
         email: "",
         image: ""
     },
-    isLoggedIn: false,
-    isHospitalConfigured: false
+    isLoggedIn: false
 };
 
 export const authSlice = createSlice({

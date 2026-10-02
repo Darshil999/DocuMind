@@ -9,7 +9,6 @@ import { Toaster } from "@/components/ui/sonner"
 import { ReduxProviderWrapper } from "@/components/ReduxProviderWrapper"
 import {
   getSiteUrl,
-  SITE_AUTHOR,
   SITE_DESCRIPTION,
   SITE_KEYWORDS,
   SITE_NAME,
@@ -26,9 +25,6 @@ export const metadata: Metadata = {
   },
   description: SITE_DESCRIPTION,
   applicationName: SITE_NAME,
-  authors: [{ name: SITE_AUTHOR, url: siteUrl }],
-  creator: SITE_AUTHOR,
-  publisher: SITE_AUTHOR,
   keywords: [...SITE_KEYWORDS],
   category: "technology",
   robots: {
