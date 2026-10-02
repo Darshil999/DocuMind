@@ -1,5 +1,5 @@
 {
-  "name": "docassist-backend",
+  "name": "documind-backend",
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/revanai/bandhucare-backend.git"
+    "url": "git+https://github.com/Darshil999/DocuMind.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/revanai/bandhucare-backend/issues"
+    "url": "https://github.com/Darshil999/DocuMind/issues"
   },
-  "homepage": "https://github.com/revanai/bandhucare-backend#readme",
+  "homepage": "https://github.com/Darshil999/DocuMind#readme",
   "devDependencies": {
     "@types/bcrypt": "^6.0.0",
     "@types/cookie-parser": "^1.4.10",

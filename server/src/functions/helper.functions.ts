@@ -46,7 +46,7 @@ export const generateQrCode = async (data: string): Promise<string> => {
       pathToFile,
       filename,
       { tag: 'QRCode' },
-      'bandhucare_test',
+      'documind/uploads',
       true,
     );
     return url;

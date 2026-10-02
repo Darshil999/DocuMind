@@ -53,7 +53,7 @@ const addTransports = () => {
                 cappedSize: 10000000,
                 cappedMax: 50000,
                 storeHost: true,
-                label: "bandhucare-backend",
+                label: "DocuMind",
                 metaKey: "meta",
                 options: { useUnifiedTopology: true },
                 format: fileDbFormat,

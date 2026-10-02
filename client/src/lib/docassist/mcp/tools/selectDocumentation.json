@@ -1,6 +1,6 @@
 {
   "name": "selectDocumentation",
-  "description": "Choose which vendor or framework documentation DocAssist should use for subsequent queries.",
+  "description": "Choose which vendor or framework documentation DocuMind should use for subsequent queries.",
   "inputSchema": {
     "type": "object",
     "properties": {

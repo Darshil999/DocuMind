@@ -6,7 +6,7 @@ import { Chat } from "@/components/chat"
 
 export const metadata: Metadata = {
   title: "Conversation",
-  description: "DocAssist conversation.",
+  description: "DocuMind conversation.",
   robots: { index: false, follow: false },
 }
 

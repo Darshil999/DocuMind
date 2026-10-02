@@ -99,7 +99,7 @@ export function queryDocumentation(
   if (hit) return hit
 
   return {
-    answer: `Based on **${input.documentationId}** docs, here is a concise answer to: "${input.query.slice(0, 120)}${input.query.length > 120 ? "…" : ""}". In production, DocAssist retrieves live context and cites sources.`,
+    answer: `Based on **${input.documentationId}** docs, here is a concise answer to: "${input.query.slice(0, 120)}${input.query.length > 120 ? "…" : ""}". In production, DocuMind retrieves live context and cites sources.`,
     sources: [
       {
         title: `${input.documentationId} — documentation`,

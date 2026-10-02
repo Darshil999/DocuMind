@@ -13,7 +13,7 @@ export function generateCodeSnippet(
       ? `curl -sS https://api.example.com/v1/${input.documentationId} \\
   -H "Authorization: Bearer $TOKEN" \\
   -d '${JSON.stringify({ intent: input.intent })}'`
-      : `import { createClient } from '@docassist/sdk'
+      : `import { createClient } from '@documind/sdk'
 
 const client = createClient({ documentation: '${input.documentationId}' })
 

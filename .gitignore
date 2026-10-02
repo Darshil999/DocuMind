@@ -1,0 +1,18 @@
+node_modules/
+.env
+.env.*
+!.env.example
+
+# Runtime and generated output
+*.log
+logs/
+server/logs/
+server/dist/
+server/asf
+client/.next/
+client/out/
+
+# Local tooling and OS files
+.DS_Store
+Thumbs.db
+.vscode/

@@ -58,7 +58,7 @@ export const uploadMedia = async (
         const url = await uploadImageToAwsS3(
             file.path,
             file.originalname,
-            "docassist/media",
+            "documind/media",
         );
 
         res.status(201).json(

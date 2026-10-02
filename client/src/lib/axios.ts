@@ -11,7 +11,7 @@ const isBrowser = typeof window !== "undefined";
 
 const getAccessToken = () => {
     if (!isBrowser) return null;
-    return localStorage.getItem("accessToken") ?? getCookie("bandhucare-token");
+    return localStorage.getItem("accessToken") ?? getCookie("documind-token");
 };
 
 const setAccessToken = (token: string) => {
@@ -28,7 +28,7 @@ const clearTokens = () => {
     if (!isBrowser) return;
     localStorage.removeItem("accessToken");
     localStorage.removeItem("refreshToken");
-    removeCookie("bandhucare-token");
+    removeCookie("documind-token");
 };
 
 const api = axios.create({

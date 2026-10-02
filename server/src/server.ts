@@ -26,7 +26,7 @@ dotenv.config({ path: path.join(__dirname, '../.env.dev') });
 const mode = process.env.APP_MODE || 'api';
 app.use(
     cors({
-        origin: ['http://localhost:3000', "https://docassist.aryan-dev.in"],
+        origin: ['http://localhost:3000'],
         methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
         allowedHeaders: ['Content-Type', 'Authorization', 'x-refresh-token'],
         credentials: true,
@@ -58,7 +58,7 @@ const startServer = async () => {
     try {
         await connectDB();
         server.listen(process.env.PORT, () => {
-            logger.info(`DocAssist Server running on port ${process.env.PORT}`);
+            logger.info(`DocuMind Server running on port ${process.env.PORT}`);
         });
     } catch (error) {
         logger.error('Failed to start server:', error);

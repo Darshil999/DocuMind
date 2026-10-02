@@ -24,7 +24,7 @@ const cols = [
     title: "Community",
     links: [
       { href: "https://github.com", label: "GitHub" },
-      { href: "mailto:hello@docassist.dev", label: "Contact" },
+      { href: "mailto:hello@documind.dev", label: "Contact" },
     ],
   },
 ]
@@ -63,7 +63,7 @@ export function LandingFooter() {
         </div>
       </div>
       <div className="border-t border-border/60 py-6 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} DocAssist. All rights reserved.
+        © {new Date().getFullYear()} DocuMind. All rights reserved.
         <span className="mx-2">·</span>
         <a href="https://twitter.com" className="hover:text-foreground">
           Twitter / X

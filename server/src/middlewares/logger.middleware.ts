@@ -17,7 +17,7 @@ export const requestLogger = (
 ) => {
   const startTime = process.hrtime.bigint();
 
-  req.logger = createLogger("DocAssist").child({ requestId: generateUUID() });
+  req.logger = createLogger("DocuMind").child({ requestId: generateUUID() });
 
   req.logger.info(`${req.method} ${req.originalUrl}`, {
     ip: req.ip,

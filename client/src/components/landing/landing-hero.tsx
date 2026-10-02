@@ -21,7 +21,7 @@ function HeroChatMock({ className }: { className?: string }) {
           <span className="size-2.5 rounded-full bg-emerald-500/80" />
         </div>
         <span className="ml-2 text-xs font-medium text-muted-foreground">
-          Stripe · DocAssist
+          Stripe · DocuMind
         </span>
       </div>
       <div className="space-y-4 p-4 sm:p-5">

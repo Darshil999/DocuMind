@@ -28,7 +28,7 @@ export async function uploadFilePathToS3(
     filePath: string,
     originalName: string,
     metaData?: Record<string, string>,
-    folder: string = "bandhucare_test",
+    folder: string = "documind/uploads",
     deleteFile: boolean = true
 ): Promise<string> {
     if (!fs.existsSync(filePath)) {

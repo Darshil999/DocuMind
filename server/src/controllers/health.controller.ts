@@ -6,7 +6,7 @@ export const healthCheck = async (
     next: NextFunction
 ): Promise<void> => {
     try {
-        res.status(200).send(`Bandhu Care Server running on port ${process.env.PORT}`);
+        res.status(200).send(`DocuMind Server running on port ${process.env.PORT}`);
         return;
     } catch (error) {
         next(error)

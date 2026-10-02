@@ -32,7 +32,7 @@ export function DocAssistMark({
 
   const wordmark = showWordmark ? (
     <span className="font-semibold tracking-tight text-foreground">
-      DocAssist
+      DocuMind
     </span>
   ) : null
 

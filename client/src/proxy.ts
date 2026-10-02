@@ -10,7 +10,7 @@ function getSessionToken(request: NextRequest): string | undefined {
 
   return (
     request.cookies.get("accessToken")?.value ||
-    request.cookies.get("bandhucare-token")?.value ||
+    request.cookies.get("documind-token")?.value ||
     bearer
   )
 }

@@ -11,7 +11,7 @@ const quotes = [
   },
   {
     quote:
-      "We onboarded two devs onto Stripe Connect in an afternoon using DocAssist.",
+      "We onboarded two devs onto Stripe Connect in an afternoon using DocuMind.",
     name: "Jordan K.",
     role: "Tech lead",
   },

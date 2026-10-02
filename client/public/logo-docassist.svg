@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
-  <title id="title">DocAssist</title>
-  <desc id="desc">Documentation pages with AI assistance — DocAssist logo</desc>
+  <title id="title">DocuMind</title>
+  <desc id="desc">Documentation pages with AI assistance — DocuMind logo</desc>
   <defs>
     <linearGradient id="da-doc" x1="12" y1="6" x2="42" y2="54" gradientUnits="userSpaceOnUse">
       <stop stop-color="#5b21b6"/>

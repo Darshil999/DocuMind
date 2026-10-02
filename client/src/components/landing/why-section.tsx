@@ -15,11 +15,11 @@ export function WhySection() {
       <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
         <ScrollReveal>
           <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-            Why DocAssist
+            Why DocuMind
           </h2>
           <p className="mt-4 text-muted-foreground">
             Documentation is essential — but finding the right paragraph at the
-            right time shouldn&apos;t be a bottleneck. DocAssist keeps you in
+            right time shouldn&apos;t be a bottleneck. DocuMind keeps you in
             flow with structured, source-backed answers.
           </p>
         </ScrollReveal>

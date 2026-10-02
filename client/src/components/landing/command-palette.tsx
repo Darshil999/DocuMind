@@ -109,7 +109,7 @@ export function CommandPalette() {
         <SheetHeader className="border-b border-border/60 px-4 py-3 text-left">
           <SheetTitle className="text-sm font-medium">Command palette</SheetTitle>
           <p className="text-xs text-muted-foreground">
-            Navigate DocAssist. Powered by the same skill names as MCP tools.
+            Navigate DocuMind. Powered by the same skill names as MCP tools.
           </p>
         </SheetHeader>
         <div className="p-2">

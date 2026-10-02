@@ -2,7 +2,7 @@
 
 export const SITE_AUTHOR = "Patel Aryan"
 
-export const SITE_NAME = "DocAssist"
+export const SITE_NAME = "DocuMind"
 
 export const SITE_DESCRIPTION =
   "Select Stripe, LiveKit, Firebase, and more — ask questions, get instant context-aware answers with code snippets."
@@ -17,7 +17,7 @@ export const SITE_KEYWORDS = [
   "AI chat",
   "documentation assistant",
   "code snippets",
-  "DocAssist",
+  "DocuMind",
 ] as const
 
 export function getSiteUrl(): string {

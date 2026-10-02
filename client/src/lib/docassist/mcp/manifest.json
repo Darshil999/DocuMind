@@ -1,7 +1,7 @@
 {
-  "name": "docassist",
+  "name": "documind",
   "version": "0.1.0",
-  "description": "MCP-style tool surface for DocAssist: select docs, query with RAG-style answers, generate snippets, summarize sections.",
+  "description": "MCP-style tool surface for DocuMind: select docs, query with RAG-style answers, generate snippets, summarize sections.",
   "repositoryLayer": "client/src/lib/docassist",
   "router": "router.ts",
   "skills": [
